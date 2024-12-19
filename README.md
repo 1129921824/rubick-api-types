@@ -13,7 +13,7 @@
 第一步
 
 ```bash
-npm install utools-api-types --save-dev
+npm install --save-dev 1129921824@https://github.com/1129921824/rubick-api-types#rubick
 ```
 
 第二步 配置 tsconfig.json
