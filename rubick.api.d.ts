@@ -1,4 +1,4 @@
-/// <reference path="ubw.d.ts"/>
+/// <reference path="rbw.d.ts"/>
 /// <reference path="electron.d.ts"/>
 interface UBrowser {
   /**
@@ -199,6 +199,10 @@ interface UBrowser {
    * @param ubrowserId 1. run(options) 运行结束后, 当 ubrowser 实例窗口仍然显示时返回 2. utools.getIdleUBrowsers() 中获得
    */
   run<T extends any = any[]>(ubrowserId: number): Promise<T>;
+}
+
+interface RBrowser extends UBrowser {
+
 }
 
 interface Display {
@@ -779,4 +783,10 @@ interface UToolsApi {
   ubrowser: UBrowser;
 }
 
+interface RubickApi extends UToolsApi{
+
+}
+
 declare var utools: UToolsApi;
+
+declare var rubick: RubickApi;

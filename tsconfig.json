@@ -16,6 +16,6 @@
   },
   "files": [
     "index.d.ts",
-    "utools.api.d.ts"
+    "rubick.api.d.ts"
   ]
 }
